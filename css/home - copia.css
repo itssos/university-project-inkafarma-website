@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+body {
+	background: #f2f4f8;
+}
+
+/* ------ Home ------*/
+
+.container-home{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.container-home > h2 {
+	text-align: center;
+	font-size: 50px;
+}
+
+/* ------ Promotions ------*/
+
+.container-home__promotions {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	border-radius: 25px;
+	margin: 50px auto;
+	padding: 30px;
+	align-items: center;
+	background-image: url("https://images.ctfassets.net/l9x8e72nkkav/5RxyHgvxLNohUPAtN9vqUA/5f9379c1b37eb456c1e9ccfa2aa72af9/inka-web-bannerproductlist_farmacia.jpg");
+}
+
+.promotions__text {
+	text-align: center;
+	color: #fff;
+	margin: 20px;
+	width: 100%;
+}
+
+.promotions__text h2{
+	font-size: 40px;
+	margin: 20px;
+}
+.promotions__text p b{
+	font-size: 30px;
+	margin: 20px;
+}
+
+.promotions__text a button{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #fff;
+	border: none;
+	font-size: 20px;
+	color: #000;
+	transition: all 0.3s;
+}
+.promotions__text a button:hover{
+	transform: scale(1.1);
+	color: #fff;
+	background-color: #000;
+}
+
+.container-promotions__products{
+	display: flex;
+	justify-content: center;
+}
+
+.promotion__product {
+	width: 25%;
+	background-color: #fff;
+	margin: 10px;
+	border-radius: 30px;
+	padding: 20px;
+	transition: all 0.3s;
+}
+
+.promotion__product a {
+	text-decoration: none;
+	color: #000;
+}
+
+.promotion__product__img{
+	width: 150px;
+	height: 150px;
+	background-size:cover;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+#ppi-1{
+	background-image: url("https://novafarmawimer.pe/wp-content/uploads/2022/06/VICK20VAPORUB20POTE20X2010020GR.jpg");
+}
+#ppi-2{
+	background-image: url("https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/932007L.jpg");
+	background-size:cover;
+}
+#ppi-3{
+	background-image: url("https://www.tylenol.com.mx/sites/tylenol_mx/files/styles/product_image/public/product-images/tylenol-caja-con-frasco-10-tabletas-980-x-980-px-1.jpg");
+}
+
+.promotion__product:hover{
+	transform: scale(1.05);
+}
+
+
+/* ------ News ------*/
+
+.container-home__news{
+	width: 90%;
+	height: 100%;
+	border-radius: 25px;
+	margin: 20px auto;
+	background-color: #fff;
+	background-size:cover;
+	padding: 30px;
+	display: flex;
+	color: #fff;
+	border: 1px solid #dee0e3;
+	box-shadow: 0 0 5px 1px #98999b;
+
+}
+
+
+@media only screen and (max-width:1280px) {
+	.container-home__news {
+		display: block;
+	}
+	.container-promotions__products {
+		display: none;
+	}
+}
+
+
+
+.news{
+	width: 80%;
+	height: 100%;
+	border-radius: 25px;
+	margin: 20px 20px;
+	background-image: url("https://cdn.who.int/media/images/default-source/health-topics/coronavirus/corona-virus-getty.tmb-1200v.jpg?sfvrsn=217a6a68_42");
+	background-size:cover;
+	padding: 30px;
+	color: #fff;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(5px);
+}
+
+.news::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	backdrop-filter: blur(5px);
+	z-index: -1;
+}
+
+.news h2 {
+	font-size: 35px;
+}
+.news p {
+	font-size: 25px;
+	
+}
+
+.news:hover{
+	transform: scale(1.05);
+}
+
+.news a {
+	
+}
+
+.news a button{
+	margin: 20px 0 0 0;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	transition: all 0.3s ease;
+}
+
+.news a button:hover{
+	color: #fff;
+	background-color: #262525;
+	border: 1px solid #fff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje de compra realizada</title>
+</head>
+<body>
+    <script>
+        // Función para mostrar el mensaje de compra realizada
+        function mostrarMensaje() {
+            var mensajeDiv = document.createElement('div');
+            mensajeDiv.textContent = '¡Compra realizada!';
+            mensajeDiv.style.position = 'fixed';
+            mensajeDiv.style.top = '50%';
+            mensajeDiv.style.left = '50%';
+            mensajeDiv.style.transform = 'translate(-50%, -50%)';
+            mensajeDiv.style.backgroundColor = '#fff';
+            mensajeDiv.style.padding = '20px';
+            mensajeDiv.style.border = '2px solid #000';
+            mensajeDiv.style.borderRadius = '5px';
+            mensajeDiv.style.zIndex = '9999';
+            document.body.appendChild(mensajeDiv);
+
+            // Espera 2 segundos y luego redirige a otra página
+            setTimeout(function() {
+                window.location.href = '../tienda.php'; // Cambia 'tienda.php' por la página a la que deseas redirigir después de 2 segundos
+            }, 1500);
+        }
+
+        // Llama a la función para mostrar el mensaje de compra realizada
+        mostrarMensaje();
+    </script>
+</body>
+</html>

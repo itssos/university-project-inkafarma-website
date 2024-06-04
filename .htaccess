@@ -1,0 +1,3 @@
+Options -Indexes
+ErrorDocument 404 /inkafarma.com/404.php
+ErrorDocument 403 /inkafarma.com/403.php
